@@ -1,357 +1,291 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fidèle MIAKANDA | Portfolio</title>
-    
-    <!-- Polices et Icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #3b82f6; /* Bleu Tech */
-            --accent: #8b5cf6; /* Violet IA/Espace */
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --glass: rgba(255, 255, 255, 0.05);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fidèle Miakanda</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--dark);
-            color: var(--light);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+<style>
+:root {
+    --bg: #f5f5f7;
+    --text: #1d1d1f;
+    --sub: #6e6e73;
+    --card: #ffffff;
+    --border: #e5e5e7;
+}
 
-        /* Arrière-plan animé discret */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
-            z-index: -1;
-        }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+    background: var(--bg);
+    color: var(--text);
+}
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+/* NAV */
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+}
 
-        /* --- Header / Hero --- */
-        header {
-            padding: 80px 0 40px;
-            text-align: center;
-        }
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--sub);
+}
 
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid var(--primary);
-            margin-bottom: 20px;
-            object-fit: cover;
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-        }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
+.hero img {
+    width: 140px;
+    border-radius: 50%;
+}
 
-        .tagline {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            margin-bottom: 25px;
-        }
+.hero h1 {
+    font-size: 48px;
+}
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: var(--sub);
+}
 
-        .social-links a {
-            color: var(--light);
-            font-size: 1.5rem;
-            transition: 0.3s;
-        }
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+}
 
-        .social-links a:hover {
-            color: var(--primary);
-            transform: translateY(-3px);
-        }
+/* SECTIONS */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
 
-        .btn-cv {
-            display: inline-block;
-            padding: 12px 25px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-        }
+h2 {
+    margin-bottom: 30px;
+}
 
-        .btn-cv:hover {
-            background: var(--accent);
-            box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
-        }
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
 
-        /* --- Sections --- */
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
 
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+.card:hover {
+    transform: translateY(-5px);
+}
 
-        h2::after {
-            content: "";
-            height: 2px;
-            flex-grow: 1;
-            background: linear-gradient(to right, var(--primary), transparent);
-        }
+/* ICONS */
+.icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        .card {
-            background: var(--glass);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: 0.3s;
-        }
+.icons a {
+    font-size: 24px;
+    color: var(--text);
+}
 
-        .card:hover {
-            transform: translateX(10px);
-            border-color: var(--primary);
-        }
+/* TOOL LOGOS */
+.tools img {
+    width: 40px;
+    margin: 10px;
+}
 
-        .card h3 { color: var(--primary); margin-bottom: 5px; }
-        .date { font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px; display: block; }
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--sub);
+}
+</style>
 
-        /* --- Skills Grid --- */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-
-        .skill-item {
-            background: var(--glass);
-            padding: 20px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-
-        .skill-item i {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .skill-item:hover {
-            background: rgba(255,255,255,0.1);
-            color: var(--primary);
-        }
-
-        /* --- Tags --- */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .tag {
-            background: rgba(59, 130, 246, 0.1);
-            color: var(--primary);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            .profile-img { width: 140px; height: 140px; }
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <header>
-            <img src="photo.jpg" alt="Fidèle MIAKANDA" class="profile-img">
-            <h1>Fidèle MIAKANDA</h1>
-            <p class="tagline">Étudiant en Ingénierie Informatique & IA | Passionné d'Astronomie</p>
-            
-            <div class="social-links">
-                <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sefimiakanda" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:sefimiakanda@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://leetcode.com/u/sefimiakanda/" target="_blank"><i class="fas fa-code"></i></a>
-            </div>
+<header>
+    <strong>Fidèle</strong>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-            <a href="cv.pdf" class="btn-cv" download>
-                <i class="fas fa-download"></i> Télécharger mon CV (PDF)
-            </a>
-        </header>
+<!-- HERO -->
+<section class="hero">
+    <img src="photo.jpg">
+    <h1>Fidèle Miakanda</h1>
+    <p>
+        Computer & AI Engineering student focused on intelligent systems,
+        Data and IoT solutions.
+    </p>
+    <a href="cv.pdf" class="btn" download>Download CV</a>
+</section>
 
-        <!-- Profil -->
-        <section id="about">
-            <h2><i class="fas fa-user"></i> Profil</h2>
-            <p>Étudiant en génie informatique et IA, passionné par l'astronomie et les technologies émergentes. Orienté vers l'initiative et le leadership, je m'engage dans un apprentissage continu pour créer de la valeur technologique.</p>
-        </section>
-
-        <!-- Expérience -->
-        <section id="experience">
-            <h2><i class="fas fa-briefcase"></i> Expérience</h2>
-            
-            <div class="card">
-                <h3>VODACOM CONGO (RDC)</h3>
-                <span class="date">Fév 2025 – Présent | Ambassadeur Tech Start</span>
-                <p>Ambassadeur du programme d'accélération numérique via VODAEDUC & AWS. Accompagnement des jeunes vers les compétences tech.</p>
-            </div>
-
-            <div class="card">
-                <h3>EQUITY BCDC</h3>
-                <span class="date">Oct 2024 – Déc 2024 | Stagiaire Front Office & Produits Digitaux</span>
-                <p>Promotion et support des solutions digitales bancaires et feedbacks utilisateurs.</p>
-            </div>
-        </section>
-
-        <!-- Éducation -->
-        <section id="education">
-            <h2><i class="fas fa-graduation-cap"></i> Éducation</h2>
-            <div class="card">
-                <h3>Université de Lubumbashi</h3>
-                <p>BSc en Génie Informatique, IA et Innovation (Bac 2)</p>
-                <span class="date">2024 – 2027</span>
-            </div>
-            <div class="card">
-                <h3>Collège Don Bosco</h3>
-                <p>Diplôme d'État en Sciences - Major de promotion (83%)</p>
-                <span class="date">2023</span>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills">
-            <h2><i class="fas fa-tools"></i> Compétences & Outils</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="devicon-python-plain"></i>
-                    <span>Python</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-tensorflow-original"></i>
-                    <span>TensorFlow</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-pytorch-original"></i>
-                    <span>PyTorch</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-javascript-plain"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
-                    <span>AWS</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-oracle-original"></i>
-                    <span>Oracle Cloud</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-linux-plain"></i>
-                    <span>Linux</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-git-plain"></i>
-                    <span>Git</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-vscode-plain"></i>
-                    <span>VS Code</span>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-html5-plain"></i>
-                    <span>HTML/CSS</span>
-                </div>
-            </div>
-            
-            <div class="tags" style="margin-top: 30px; justify-content: center;">
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Deep Learning</span>
-                <span class="tag">Computer Vision</span>
-                <span class="tag">NLP</span>
-                <span class="tag">Data Engineering</span>
-                <span class="tag">IoT</span>
-                <span class="tag">Générative AI</span>
-            </div>
-        </section>
-
-        <!-- Distinctions -->
-        <section id="awards">
-            <h2><i class="fas fa-star"></i> Distinctions</h2>
-            <div class="card">
-                <h3>MIT iQuHACK BlueQubit Challenge</h3>
-                <p>Classé 12ème sur 320+ participants au hackathon mondial de calcul quantique.</p>
-            </div>
-            <div class="card">
-                <h3>NASA Space Apps Challenge</h3>
-                <p>Galactic Problem Solver - Design de solutions innovantes basées sur les données ouvertes de la NASA.</p>
-            </div>
-            <div class="card">
-                <h3>Bourse Vodacom Exetat</h3>
-                <p>Top 100 des étudiants au niveau national (RDC).</p>
-            </div>
-        </section>
-
-        <footer style="text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9rem;">
-            <p>&copy; 2025 Fidèle MIAKANDA - Généré avec passion pour la Tech & l'Espace.</p>
-        </footer>
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About</h2>
+    <div class="card">
+        <p>
+        I specialize in Artificial Intelligence, Data Engineering and IoT systems.
+        My goal is to design scalable, data-driven solutions capable of solving
+        real-world problems using modern technologies.
+        </p>
     </div>
+</section>
 
-    <!-- Script pour un effet de défilement fluide -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+    <h2>Experience</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Vodacom Congo</h3>
+            <p>Tech Start Ambassador</p>
+        </div>
+
+        <div class="card">
+            <h3>Equity BCDC</h3>
+            <p>Digital Products Intern</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>NASA Simulator</h3>
+            <p>Geospatial system for meteorite tracking (NASA Space Apps).</p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Agriculture</h3>
+            <p>IoT irrigation system with sensors and automation.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Classification Model</h3>
+            <p>Machine learning model for service quality prediction.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section" id="tools">
+    <h2>Tools & Technologies</h2>
+
+    <div class="grid">
+
+        <!-- AI / DATA -->
+        <div class="card">
+            <h3>AI & Data</h3>
+            <div class="tools">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+            </div>
+        </div>
+
+
+        <!-- IOT -->
+        <div class="card">
+            <h3>IoT & Embedded</h3>
+            <div class="tools">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+            </div>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="card">
+            <h3>Tools</h3>
+            <div class="tools">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <h2>Contact</h2>
+
+    <div class="icons">
+
+        <a href="mailto:sefimiakanda@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://wa.me/243829106401" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://github.com/sefimiakanda" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://leetcode.com/u/sefimiakanda" target="_blank">
+            <i class="fas fa-code"></i>
+        </a>
+
+    </div>
+</section>
+
+<footer>
+© 2026 Fidèle Miakanda
+</footer>
+
 </body>
 </html>
