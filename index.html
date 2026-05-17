@@ -1,291 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fidèle Miakanda</title>
-
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-:root {
-    --bg: #f5f5f7;
-    --text: #1d1d1f;
-    --sub: #6e6e73;
-    --card: #ffffff;
-    --border: #e5e5e7;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
-    background: var(--bg);
-    color: var(--text);
-}
-
-/* NAV */
-header {
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--border);
-}
-
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: var(--sub);
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero img {
-    width: 140px;
-    border-radius: 50%;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    max-width: 600px;
-    margin: auto;
-    color: var(--sub);
-}
-
-.btn {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 20px;
-    background: black;
-    color: white;
-    border-radius: 999px;
-    text-decoration: none;
-}
-
-/* SECTIONS */
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-h2 {
-    margin-bottom: 30px;
-}
-
-/* CARDS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* ICONS */
-.icons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.icons a {
-    font-size: 24px;
-    color: var(--text);
-}
-
-/* TOOL LOGOS */
-.tools img {
-    width: 40px;
-    margin: 10px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px;
-    color: var(--sub);
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidèle Miakanda | Ingénieur IA & IoT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome pour des icônes modernes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-    <strong>Fidèle</strong>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#tools">Tools</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- Barre de Navigation -->
+    <header>
+        <div class="logo">Fidèle Miakanda</div>
+        <nav>
+            <a href="#about">Profil</a>
+            <a href="#experience">Expérience</a>
+            <a href="#awards">Distinctions</a>
+            <a href="#tools">Technologies</a>
+            <a href="#contact" class="nav-cta">Me Contacter</a>
+        </nav>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-    <img src="photo.jpg">
-    <h1>Fidèle Miakanda</h1>
-    <p>
-        Computer & AI Engineering student focused on intelligent systems,
-        Data and IoT solutions.
-    </p>
-    <a href="cv.pdf" class="btn" download>Download CV</a>
-</section>
-
-<!-- ABOUT -->
-<section class="section" id="about">
-    <h2>About</h2>
-    <div class="card">
-        <p>
-        I specialize in Artificial Intelligence, Data Engineering and IoT systems.
-        My goal is to design scalable, data-driven solutions capable of solving
-        real-world problems using modern technologies.
-        </p>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section" id="experience">
-    <h2>Experience</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Vodacom Congo</h3>
-            <p>Tech Start Ambassador</p>
-        </div>
-
-        <div class="card">
-            <h3>Equity BCDC</h3>
-            <p>Digital Products Intern</p>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="section" id="projects">
-    <h2>Projects</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>NASA Simulator</h3>
-            <p>Geospatial system for meteorite tracking (NASA Space Apps).</p>
-        </div>
-
-        <div class="card">
-            <h3>Smart Agriculture</h3>
-            <p>IoT irrigation system with sensors and automation.</p>
-        </div>
-
-        <div class="card">
-            <h3>AI Classification Model</h3>
-            <p>Machine learning model for service quality prediction.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- TOOLS -->
-<section class="section" id="tools">
-    <h2>Tools & Technologies</h2>
-
-    <div class="grid">
-
-        <!-- AI / DATA -->
-        <div class="card">
-            <h3>AI & Data</h3>
-            <div class="tools">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+    <!-- Section Héros -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-avatar">
+                <img src="photo.jpg" alt="Fidèle Miakanda">
             </div>
-        </div>e
-
-
-        <!-- IOT -->
-        <div class="card">
-            <h3>IoT & Embedded</h3>
-            <div class="tools">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+            <h1>Fidèle Miakanda</h1>
+            <p class="subtitle">Étudiant en Génie Informatique, Intelligence Artificielle et Innovation</p>
+            <p class="tagline">Spécialisé dans les systèmes internes, l'IoT et l'ingénierie des données.</p>
+            <div class="hero-actions">
+                <a href="cv.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Télécharger le CV</a>
+                <a href="#experience" class="btn btn-secondary">Voir le parcours</a>
             </div>
         </div>
+    </section>
 
-        <!-- TOOLS -->
-        <div class="card">
-            <h3>Tools</h3>
-            <div class="tools">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg">
+    <!-- Section À Propos -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <h2>À propos de moi</h2>
+            <div class="about-card">
+                <p>
+                    Actuellement en BSc. (Bac 2) à l'Université de Lubumbashi, je me passionne pour les Mathématiques, l'Astronomie et les technologies émergentes. Axé sur l'initiative et le leadership.
+                </p>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- Section Expérience Professionnelle -->
+    <section class="section" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Expérience Professionnelle</h2>
+                <p class="section-subtitle">Engagements actuels et contributions dans le domaine de la technologie</p>
+            </div>
 
+            <div class="timeline">
+                <!-- Expérience ICSC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="company">International Computer Science Competition (ICSC)</span>
+                        </div>
+                        <h3>Ambassadeur ICSC</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</p>
+                        <ul>
+                            <li>Promotion active de l'éducation en informatique et de l'innovation technologique auprès des étudiants.</li>
+                            <li>Organisation d'ateliers de code, sessions de mentorat et collaboration avec un réseau mondial pour renforcer la communauté tech.</li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="https://icscompetition.org/fmiakanda" target="_blank" class="link-btn"><i class="fas fa-external-link-alt"></i> Profil Public ICSC</a>
+                        
+                        </div>
+                    </div>
+                </div>
 
-<!-- CONTACT -->
-<section class="section" id="contact">
-    <h2>Contact</h2>
+                <!-- Expérience Vodacom -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="company">Vodacom Congo (RDC)</span>
+                        </div>
+                        <h3>Tech Start Ambassador</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</p>
+                        <ul>
+                            <li>Ambassadeur du programme d'accélération digitale via la plateforme VODAEDUC, en partenariat avec Amazon Web Services (AWS).</li>
+                            <li>Orientation et accompagnement des jeunes dans l'apprentissage des technologies cloud et numériques via des accès gratuits.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="icons">
+    <!-- Section Distinctions & Prix -->
+    <section class="section alt-bg" id="awards">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Distinctions & Prix</h2>
+                <p class="section-subtitle">Reconnaissances académiques et compétitions internationales</p>
+            </div>
 
-        <a href="mailto:sefimiakanda@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
+            <div class="grid">
+                <div class="card award-card">
+                    <div class="award-icon"><i class="fas fa-atom"></i></div>
+                    <h3>MIT iQuHACK — 12e Place</h3>
+                    <p class="award-date">Janvier 2026</p>
+                    <p>Classé 12e au défi BlueQubit de l'iQuHACK (MIT iQuISE) et 16e mondial sur plus de 578 équipes lors de ce hackathon d'informatique quantique.</p>
+                </div>
 
-        <a href="https://wa.me/243829106401" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+                <div class="card award-card">
+                    <div class="award-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>IASC Asteroid Search</h3>
+                    <p class="award-date">Janv – Fév 2026</p>
+                    <p>Participation active à la détection d'astéroïdes avec Pan-STARRS via l'analyse d'images astronomiques, mesures de position et calculs orbitaux.</p>
+                </div>
 
-        <a href="https://github.com/sefimiakanda" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
+                <div class="card award-card">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>NASA Space Apps Challenge</h3>
+                    <p class="award-date">Octobre 2025</p>
+                    <p>Titre de <strong>Galactic Problem Solver</strong> pour la conception d'un système géospatial de suivi des météorites basé sur les données ouvertes de la NASA.</p>
+                </div>
 
-        <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
+                <div class="card award-card">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Bourse Vodacom Exetat</h3>
+                    <p class="award-date">Janvier 2024</p>
+                    <p>Sélectionné parmi les 100 meilleurs étudiants de la République Démocratique du Congo bénéficiaires de la bourse Vodacom Exetat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <a href="https://leetcode.com/u/sefimiakanda" target="_blank">
-            <i class="fas fa-code"></i>
-        </a>
+    <!-- Section Technologies -->
+    <section class="section" id="tools">
+        <div class="section-container">
+            <h2>Outils & Technologies</h2>
+            <div class="grid-tools">
+                <div class="tool-category">
+                    <h3>Intelligence Artificielle & Data</h3>
+                    <div class="tool-logos">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                    </div>
+                </div>
 
-    </div>
-</section>
+                <div class="tool-category">
+                    <h3>IoT & Systèmes</h3>
+                    <div class="tool-logos">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-© 2026 Fidèle Miakanda
-</footer>
+    <!-- Section Contact -->
+    <section class="section contact-section" id="contact">
+        <div class="section-container">
+            <h2>Restons en contact</h2>
+            <p>Une opportunité, un projet ou une question sur mes programmes ? Contactez-moi.</p>
+
+            <div class="contact-wrapper">
+                <!-- Formulaire de contact -->
+                <form action="https://formspree.io/f/mojbakko" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: Fidèle Miakanda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="_replyto" placeholder="Ex: fidèle.miakanda@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            
+                <!-- Grille des réseaux sociaux -->
+                <div class="contact-grid">
+                    <a href="mailto:sefimiakanda@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Personnel</span>
+                    </a>
+                    <a href="mailto:fmiakanda@amb.icscompetition.org" class="contact-item special">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Email ICSC</span>
+                    </a>
+                    <a href="https://wa.me/243829106401" target="_blank" class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/sefimiakanda" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Fidèle Miakanda.</p>
+    </footer>
 
 </body>
 </html>

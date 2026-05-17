@@ -1,0 +1,569 @@
+/* ==========================================================================
+   1. VARIABLES & THÈME (Style Premium Épuré)
+   ========================================================================== */
+:root {
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --bg-accent: #f1f3f5;
+    --text-main: #1d1d1f;
+    --text-muted: #6e6e73;
+    --accent-color: #0071e3; /* Bleu Apple */
+    --accent-hover: #005bb5;
+    --border-color: #e5e5e7;
+    
+    /* Couleurs spécifiques au formulaire sombre */
+    --form-bg: #1c1c1e;
+    --form-input-bg: #2c2c2e;
+    --form-border: #3a3a3c;
+    
+    /* Ombres */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    
+    /* Rayon des bordures */
+    --radius-lg: 20px;
+    --radius-md: 12px;
+}
+
+/* ==========================================================================
+   2. RÉINITIALISATION & STYLES GÉNÉRAUX
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Base des sections */
+.section {
+    padding: 90px 20px;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alt-bg {
+    background-color: var(--bg-secondary);
+}
+
+.section-header {
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Grille générique (Distinctions) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* ==========================================================================
+   3. BARRE DE NAVIGATION (HEADER)
+   ========================================================================== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(20px); 
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--text-main);
+}
+
+nav .nav-cta {
+    background: var(--text-main);
+    color: var(--bg-secondary);
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+nav .nav-cta:hover {
+    background: #333336;
+}
+
+/* ==========================================================================
+   4. SECTION HÉROS
+   ========================================================================== */
+.hero {
+    padding: 120px 20px 80px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-avatar img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 24px;
+    border: 3px solid var(--bg-secondary);
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin-bottom: 12px;
+    line-height: 1.1;
+}
+
+.hero .subtitle {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.hero .tagline {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto 32px auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Boutons réutilisables */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: var(--bg-accent);
+    color: var(--text-main);
+}
+
+.btn-secondary:hover {
+    background-color: var(--border-color);
+}
+
+/* ==========================================================================
+   5. CARTE À PROPOS
+   ========================================================================== */
+.about-card {
+    background: var(--bg-secondary);
+    padding: 35px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    font-size: 1.15rem;
+    color: #333336;
+}
+
+/* ==========================================================================
+   6. EXPÉRIENCE PROFESSIONNELLE (TIMELINE)
+   ========================================================================== */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 4px solid var(--bg-primary);
+}
+
+.timeline-content {
+    background: var(--bg-secondary);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-meta {
+    margin-bottom: 12px;
+}
+
+.timeline-meta .company {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.timeline-content .location {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.timeline-content ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.timeline-content ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #333336;
+}
+
+.timeline-content ul li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    top: -2px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.link-btn {
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 16px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.link-btn:hover {
+    background: var(--text-main);
+    color: white;
+    border-color: var(--text-main);
+}
+
+/* ==========================================================================
+   7. PRIX & DISTINCTIONS
+   ========================================================================== */
+.award-card {
+    background: var(--bg-secondary);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.award-icon {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+}
+
+.award-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.award-date {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   8. TECHNOLOGIES & OUTILS
+   ========================================================================== */
+.grid-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tool-category {
+    background: var(--bg-secondary);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.tool-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.tool-logos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tool-logos img {
+    width: 42px;
+    height: 42px;
+    transition: transform 0.2s ease;
+}
+
+.tool-logos img:hover {
+    transform: scale(1.18);
+}
+
+/* ==========================================================================
+   9. INTERFACE CONTACT & FORMULAIRE (Refonte Visuelle)
+   ========================================================================== */
+.contact-section {
+    background: var(--text-main); /* Fond très sombre */
+    color: var(--bg-secondary);
+}
+
+.contact-section h2 {
+    color: var(--bg-secondary);
+}
+
+.contact-section p {
+    color: #a1a1a6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Conteneur du formulaire */
+.contact-form {
+    background: var(--form-bg);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--form-border);
+    margin-bottom: 45px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #a1a1a6;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: var(--form-input-bg);
+    border: 1px solid var(--form-border);
+    border-radius: var(--radius-md);
+    color: white;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.25);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #6e6e73;
+}
+
+/* Bouton soumission */
+.form-submit {
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Grille des réseaux sociaux */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #232326;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.2s;
+    border: 1px solid #333336;
+}
+
+.contact-item:hover {
+    background: #333336;
+    transform: translateY(-2px);
+}
+
+.contact-item.special {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.contact-item.special:hover {
+    background: var(--accent-hover);
+}
+
+/* ==========================================================================
+   10. PIED DE PAGE & RESPONSIVE
+   ========================================================================== */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+    nav {
+        display: none; /* Cache le menu desktop sur mobile */
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .grid-tools {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        padding: 25px;
+    }
+}
