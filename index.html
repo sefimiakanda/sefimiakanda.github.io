@@ -3,165 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fidèle Miakanda | Ingénieur IA & IoT</title>
+    <meta name="description" content="Portfolio de Fidèle Miakanda, étudiant en génie informatique, IA et innovation : Machine Learning, Deep Learning, Data Science.">
+    <title>Fidèle Miakanda | IA, Machine Learning & Data Science</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome pour des icônes modernes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Barre de Navigation -->
     <header>
         <div class="logo">Fidèle Miakanda</div>
         <nav>
             <a href="#about">Profil</a>
             <a href="#experience">Expérience</a>
+            <a href="#projects">Projets</a>
             <a href="#awards">Distinctions</a>
             <a href="#tools">Technologies</a>
             <a href="#contact" class="nav-cta">Me Contacter</a>
         </nav>
     </header>
 
-    <!-- Section Héros -->
     <section class="hero">
         <div class="hero-container">
-            <div class="hero-avatar">
-                <img src="photo.jpg" alt="Fidèle Miakanda">
-            </div>
+            <div class="hero-avatar"><img src="assets/Profil.jpeg" alt="Fidèle Miakanda"></div>
             <h1>Fidèle Miakanda</h1>
             <p class="subtitle">Étudiant en Génie Informatique, Intelligence Artificielle et Innovation</p>
-            <p class="tagline">Spécialisé dans les systèmes intelligents, l'IoT et l'ingénierie des données.</p>
+            <p class="tagline">Machine Learning, Deep Learning, Data Science et IA générative : de la donnée au service déployé.</p>
             <div class="hero-actions">
-                <a href="resume_fidele_miakanda.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Télécharger le CV</a>
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
                 <a href="#experience" class="btn btn-secondary">Voir le parcours</a>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/sefimiakanda" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://leetcode.com/u/sefimiakanda" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                <a href="mailto:sefimiakanda@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- Section À Propos -->
     <section class="section" id="about">
         <div class="section-container">
             <h2>À propos de moi</h2>
             <div class="about-card">
+                <img class="org-logo big" src="assets/logos/esi-unilu.jpg" alt="ESI - Université de Lubumbashi">
                 <p>
-                    Actuellement en BSc. (Bac 2) à l'Université de Lubumbashi, je me passionne pour les Mathématiques, l'Astronomie et les technologies émergentes. Axé sur l'initiative et le leadership.
+                    Étudiant en Bac 3 (Bachelor) en génie informatique, intelligence artificielle et innovation à l'École Supérieure des Ingénieurs Industriels (ESI) de l'Université de Lubumbashi, diplôme prévu en 2027. Orienté Machine Learning, Deep Learning et Data Science, j'ai déployé des projets (FastAPI, RAG, Flutter) et je suis stagiaire Data Science chez CodeAlpha. Passionné par les mathématiques, l'astronomie et les technologies émergentes, avec un fort sens de l'initiative et du leadership.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Section Expérience Professionnelle -->
     <section class="section" id="experience">
         <div class="section-container">
             <div class="section-header">
-                <h2>Expérience Professionnelle</h2>
-                <p class="section-subtitle">Engagements actuels et contributions dans le domaine de la technologie</p>
+                <h2>Expérience</h2>
+                <p class="section-subtitle">Stages, fellowships et engagements dans la technologie</p>
             </div>
-
             <div class="timeline">
-                <!-- Expérience ICSC -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-meta">
-                            <span class="company">International Computer Science Competition (ICSC)</span>
-                        </div>
-                        <h3>Ambassadeur ICSC</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</p>
-                        <ul>
-                            <li>Promotion active de l'éducation en informatique et de l'innovation technologique auprès des étudiants.</li>
-                            <li>Organisation d'ateliers de code, sessions de mentorat et collaboration avec un réseau mondial pour renforcer la communauté tech.</li>
-                        </ul>
-                        <div class="card-actions">
-                            <a href="https://icscompetition.org/fmiakanda" target="_blank" class="link-btn"><i class="fas fa-external-link-alt"></i> Profil Public ICSC</a>
-                        
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Expérience Vodacom -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-meta">
-                            <span class="company">Vodacom Congo (RDC)</span>
-                        </div>
-                        <h3>Tech Start Ambassador</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</p>
-                        <ul>
-                            <li>Ambassadeur du programme d'accélération digitale via la plateforme VODAEDUC, en partenariat avec Amazon Web Services (AWS).</li>
-                            <li>Orientation et accompagnement des jeunes dans l'apprentissage des technologies cloud et numériques via des accès gratuits.</li>
-                        </ul>
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content">
+                    <div class="timeline-head"><img class="org-logo" src="assets/logos/codealpha.jpg" alt="CodeAlpha">
+                        <div class="timeline-meta"><span class="company">CodeAlpha</span><span class="date">Oct 2026 – présent</span></div></div>
+                    <h3>Stagiaire Data Science</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> À distance (Lucknow, Inde)</p>
+                    <ul><li>Conception et déploiement d'un service de prédiction du prix de voitures d'occasion (Random Forest, scikit-learn, FastAPI).</li></ul>
+                </div></div>
+
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content">
+                    <div class="timeline-head"><img class="org-logo" src="assets/logos/idev-weekends.png" alt="Dev Weekends">
+                        <div class="timeline-meta"><span class="company">Dev Weekends</span><span class="date">Juin – Sept 2026</span></div></div>
+                    <h3>Fellow, parcours Full-Stack AI Engineering</h3>
+                    <p class="location"><i class="fas fa-globe"></i> Dev Weekends Fellowship</p>
+                    <ul><li>Participation au parcours d'ingénierie IA full-stack du Dev Weekends Fellowship.</li></ul>
+                </div></div>
+
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content">
+                    <div class="timeline-head"><img class="org-logo" src="assets/logos/icsc.png" alt="ICSC">
+                        <div class="timeline-meta"><span class="company">International Computer Science Competition (ICSC)</span><span class="date">Mai 2026 – présent</span></div></div>
+                    <h3>Ambassadeur ICSC</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</p>
+                    <ul>
+                        <li>Promotion de l'éducation en informatique et de l'innovation auprès des étudiants.</li>
+                        <li>Mobilisation de plus de 15 étudiants via des ateliers de code et du mentorat, en lien avec un réseau mondial d'ambassadeurs.</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="https://icscompetition.org/fmiakanda" target="_blank" rel="noopener" class="link-btn"><i class="fas fa-external-link-alt"></i> Profil public ICSC</a>
+                        <a href="mailto:fmiakanda@amb.icscompetition.org" class="link-btn"><i class="fas fa-envelope"></i> Email ICSC</a>
                     </div>
-                </div>
+                </div></div>
+
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content">
+                    <div class="timeline-head"><img class="org-logo" src="assets/logos/vodacom.png" alt="Vodacom Congo">
+                        <div class="timeline-meta"><span class="company">Vodacom Congo (RDC)</span><span class="date">Fév – Déc 2025</span></div></div>
+                    <h3>Ambassadeur Tech Start</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</p>
+                    <ul>
+                        <li>Ambassadeur du programme d'accélération numérique sur la plateforme VODAEDUC, en partenariat avec Amazon Web Services.</li>
+                        <li>Accompagnement de plus de 420 jeunes dans des formations en ligne gratuites, accessibles sans données mobiles.</li>
+                    </ul>
+                </div></div>
+
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content">
+                    <div class="timeline-head"><img class="org-logo" src="assets/logos/equity-bcdc.png" alt="Equity BCDC">
+                        <div class="timeline-meta"><span class="company">Equity BCDC</span><span class="date">Oct – Déc 2024</span></div></div>
+                    <h3>Stagiaire Front Office & Produits digitaux</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</p>
+                    <ul>
+                        <li>Promotion et démonstration des produits digitaux de la banque (applications mobiles, USSD, cartes).</li>
+                        <li>Accompagnement des clients sur les canaux digitaux et collecte de retours pour améliorer l'adoption.</li>
+                    </ul>
+                </div></div>
+
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content">
+                    <div class="timeline-head"><img class="org-logo" src="assets/logos/vodacom-foundation.png" alt="Fondation Vodacom Congo">
+                        <div class="timeline-meta"><span class="company">Fondation Vodacom Congo</span><span class="date">Janv 2024 – présent</span></div></div>
+                    <h3>Ambassadeur VodaEduc (boursier Exetat)</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> RDC</p>
+                    <ul><li>Ambassadeur de la plateforme VodaEduc au sein de la Fondation Vodacom Congo.</li></ul>
+                </div></div>
+
             </div>
         </div>
     </section>
 
-    <!-- Section Distinctions & Prix -->
-    <section class="section alt-bg" id="awards">
+    <section class="section alt-bg" id="projects">
         <div class="section-container">
             <div class="section-header">
-                <h2>Distinctions & Prix</h2>
-                <p class="section-subtitle">Reconnaissances académiques et compétitions internationales</p>
+                <h2>Projets</h2>
+                <p class="section-subtitle">Des modèles et des applications réellement déployés</p>
             </div>
-
             <div class="grid">
                 <div class="card award-card">
-                    <div class="award-icon"><i class="fas fa-atom"></i></div>
-                    <h3>MIT iQuHACK — 12e Place</h3>
-                    <p class="award-date">Janvier 2026</p>
-                    <p>Classé 12e au défi BlueQubit de l'iQuHACK (MIT iQuISE) et 16e mondial sur plus de 578 équipes lors de ce hackathon d'informatique quantique.</p>
+                    <div class="award-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Assistant RAG d'entreprise</h3>
+                    <p>Assistant de questions/réponses sur un PDF interne, 100 % local et gratuit : modèles open source servis par Ollama, aucun coût d'API.</p>
+                    <div class="tags"><span>Python</span><span>FastAPI</span><span>Ollama</span><span>Chroma</span></div>
+                    <div class="card-actions"><a href="https://github.com/sefimiakanda/Rag-assistant" target="_blank" rel="noopener" class="link-btn"><i class="fab fa-github"></i> Code</a></div>
                 </div>
-
                 <div class="card award-card">
-                    <div class="award-icon"><i class="fas fa-user-astronaut"></i></div>
-                    <h3>IASC Asteroid Search</h3>
-                    <p class="award-date">Janv – Fév 2026</p>
-                    <p>Participation active à la détection d'astéroïdes avec Pan-STARRS via l'analyse d'images astronomiques, mesures de position et calculs orbitaux.</p>
+                    <div class="award-icon"><i class="fas fa-car"></i></div>
+                    <h3>Car Price Prediction</h3>
+                    <p>Pipeline Random Forest qui prédit le prix de voitures d'occasion, servi par une API REST validée et un formulaire web simple. Projet CodeAlpha.</p>
+                    <div class="tags"><span>scikit-learn</span><span>FastAPI</span><span>Docker</span><span>Render</span></div>
+                    <div class="card-actions">
+                        <a href="https://car-price-prediction-qqrm.onrender.com/" target="_blank" rel="noopener" class="link-btn"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        <a href="https://github.com/sefimiakanda/CodeAlpha_CarPriceDetection" target="_blank" rel="noopener" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                    </div>
                 </div>
-
                 <div class="card award-card">
-                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
-                    <h3>NASA Space Apps Challenge</h3>
-                    <p class="award-date">Octobre 2025</p>
-                    <p>Titre de <strong>Galactic Problem Solver</strong> pour la conception d'un système géospatial de suivi des météorites basé sur les données ouvertes de la NASA.</p>
-                </div>
-
-                <div class="card award-card">
-                    <div class="award-icon"><i class="fas fa-medal"></i></div>
-                    <h3>Bourse Vodacom Exetat</h3>
-                    <p class="award-date">Janvier 2024</p>
-                    <p>Sélectionné parmi les 100 meilleurs étudiants de la République Démocratique du Congo bénéficiaires de la bourse Vodacom Exetat.</p>
+                    <div class="award-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Agrivision RDC</h3>
+                    <p>Application mobile pour les petits exploitants : carnet agricole hors connexion, météo locale et assistant agricole basé sur Gemini, en français.</p>
+                    <div class="tags"><span>Flutter</span><span>Gemini API</span></div>
+                    <div class="card-actions"><a href="https://github.com/sefimiakanda/Agrivision-RDC" target="_blank" rel="noopener" class="link-btn"><i class="fab fa-github"></i> Code</a></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Technologies -->
-    <section class="section" id="tools">
+    <section class="section" id="awards">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Distinctions & Leadership</h2>
+                <p class="section-subtitle">Compétitions internationales, bourses et programmes de leadership</p>
+            </div>
+            <div class="grid">
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-trophy"></i></div><img class="org-logo" src="assets/logos/iquhack-mit.jpg" alt="MIT iQuISE"></div>
+                    <h3>MIT iQuHACK : 16e mondial</h3><p class="award-date">Jan – Fév 2026</p>
+                    <p>Classé 16e au niveau mondial sur plus de 578 équipes au BlueQubit Challenge, hackathon international du MIT iQuISE.</p>
+                </div>
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-user-astronaut"></i></div><img class="org-logo" src="assets/logos/nasa-space-apps.png" alt="NASA Space Apps"></div>
+                    <h3>NASA Space Apps Challenge</h3><p class="award-date">Octobre 2025</p>
+                    <p>Galactic Problem Solver : réalisation de <strong>NASA Simulator, Asteroid Geo-observer and Control Center</strong> à partir des données ouvertes de la NASA.</p>
+                </div>
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-star"></i></div><img class="org-logo" src="assets/logos/iasc.jpg" alt="IASC"></div>
+                    <h3>IASC Asteroid Search</h3><p class="award-date">12 Janv – 6 Fév 2026</p>
+                    <p>Détection d'astéroïdes (campagne Pan-STARRS) par analyse d'images astronomiques, mesures de position et calculs d'orbite.</p>
+                </div>
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-medal"></i></div><img class="org-logo" src="assets/logos/vodacom-foundation.png" alt="Vodacom"></div>
+                    <h3>Bourse Vodacom Exetat</h3><p class="award-date">24 Janvier 2024</p>
+                    <p>Sélectionné parmi les 100 meilleurs élèves de la RDC sur la base des résultats à l'Examen d'État (83 %, major de l'école).</p>
+                </div>
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-users"></i></div><img class="org-logo" src="assets/logos/equity-bcdc.png" alt="Equity BCDC"></div>
+                    <h3>Equity Leaders Program</h3><p class="award-date">Mai 2024 – présent</p>
+                    <p>Programme sélectif de mentorat et de leadership pour jeunes talents (80 %+ à l'Examen d'État).</p>
+                </div>
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-globe-africa"></i></div><img class="org-logo" src="assets/logos/fort-institute.png" alt="The Fort Institute"></div>
+                    <h3>FLDC, The Fort Institute</h3><p class="award-date">Fév – Juin 2026</p>
+                    <p>Programme panafricain sélectif de formation de la prochaine génération de leaders africains.</p>
+                </div>
+                <div class="card award-card">
+                    <div class="award-top"><div class="award-icon"><i class="fas fa-graduation-cap"></i></div><img class="org-logo" src="assets/logos/aspire.jpg" alt="Aspire Institute"></div>
+                    <h3>Aspire Leaders Program</h3><p class="award-date">Oct – Déc 2025</p>
+                    <p>Programme mondial de leadership (Aspire Institute, affilié à Harvard) axé sur l'impact et le leadership communautaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt-bg" id="tools">
         <div class="section-container">
             <h2>Outils & Technologies</h2>
             <div class="grid-tools">
                 <div class="tool-category">
-                    <h3>Intelligence Artificielle & Data</h3>
+                    <h3>IA & Data</h3>
                     <div class="tool-logos">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
                     </div>
                 </div>
-
                 <div class="tool-category">
-                    <h3>IoT & Systèmes</h3>
+                    <h3>Développement & Déploiement</h3>
                     <div class="tool-logos">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
                     </div>
                 </div>
                 <div class="tool-category">
@@ -172,74 +240,48 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="Anaconda">
-                        
-                    
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
     <section class="section contact-section" id="contact">
         <div class="section-container">
             <h2>Restons en contact</h2>
-            <p>Une opportunité, un projet ou une question sur mes programmes ? Contactez-moi.</p>
-
+            <p>Une opportunité, un projet ou une question ? Contactez-moi.</p>
             <div class="contact-wrapper">
-                <!-- Formulaire de contact -->
                 <form action="https://formspree.io/f/mojbakko" method="POST" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" placeholder="Ex: Fidèle Miakanda" required>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
                     </div>
-
                     <div class="form-group">
                         <label for="email">Adresse Email</label>
-                        <input type="email" id="email" name="_replyto" placeholder="Ex: fidèle.miakanda@email.com" required>
+                        <input type="email" id="email" name="_replyto" placeholder="vous@email.com" required>
                     </div>
-
                     <div class="form-group">
                         <label for="message">Votre message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
                     </div>
-
-                    <button type="submit" class="btn btn-primary form-submit">
-                        <i class="fas fa-paper-plane"></i> Envoyer le message
-                    </button>
+                    <button type="submit" class="btn btn-primary form-submit"><i class="fas fa-paper-plane"></i> Envoyer le message</button>
                 </form>
-            
-                <!-- Grille des réseaux sociaux -->
                 <div class="contact-grid">
-                    <a href="mailto:sefimiakanda@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email Personnel</span>
-                    </a>
-                    <a href="mailto:fmiakanda@amb.icscompetition.org" class="contact-item special">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Email ICSC</span>
-                    </a>
-                    <a href="https://wa.me/243829106401" target="_blank" class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank" class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/sefimiakanda" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
+                    <a href="mailto:sefimiakanda@gmail.com" class="contact-item"><i class="fas fa-envelope"></i><span>Email personnel</span></a>
+                    <a href="mailto:fmiakanda@amb.icscompetition.org" class="contact-item special"><i class="fas fa-graduation-cap"></i><span>Email ICSC</span></a>
+                    <a href="tel:+243829106401" class="contact-item"><i class="fas fa-phone"></i><span>+243 82 910 6401</span></a>
+                    <a href="https://wa.me/243829106401" target="_blank" rel="noopener" class="contact-item"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+                    <a href="https://linkedin.com/in/fidèle-miakanda" target="_blank" rel="noopener" class="contact-item"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="https://github.com/sefimiakanda" target="_blank" rel="noopener" class="contact-item"><i class="fab fa-github"></i><span>GitHub</span></a>
+                    <a href="https://leetcode.com/u/sefimiakanda" target="_blank" rel="noopener" class="contact-item"><i class="fas fa-code"></i><span>LeetCode</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2026 Fidèle Miakanda.</p>
-    </footer>
+    <footer><p>&copy; 2026 Fidèle Miakanda.</p></footer>
 
+    <script src="plexus.js"></script>
 </body>
 </html>
