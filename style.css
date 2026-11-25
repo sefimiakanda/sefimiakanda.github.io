@@ -606,3 +606,23 @@ footer {
 @media (max-width: 768px) {
     .about-card { flex-direction: column; text-align: center; }
 }
+
+/* ==========================================================================
+   12. ACCESSIBILITÉ & NORMES (focus, mobile, contraste, mouvement)
+   ========================================================================== */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 2000; background: var(--text-main); color: #fff; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+.skip-link:focus { top: 12px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 3px; }
+.tags span { color: #4a4a4f; }
+.timeline-content, .award-card { overflow-wrap: anywhere; }
+
+@media (max-width: 768px) {
+    header { flex-wrap: wrap; gap: 8px; }
+    nav { display: flex; width: 100%; overflow-x: auto; padding-bottom: 4px; }
+    nav a { margin: 0 18px 0 0; white-space: nowrap; }
+    nav .nav-cta { margin-right: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+}
